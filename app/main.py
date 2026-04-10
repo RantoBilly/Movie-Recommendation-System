@@ -1,13 +1,15 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routers import recommendation_router
+import os
+from dotenv import load_dotenv
 
 app = FastAPI()
 
 # setting up CORS Middleware : access from localhost:8001 authorized
 app.add_middleware(
     CORSMiddleware,
-    allow_origins = ["http://localhost:8001"],
+    allow_origins = ["http://localhost:8001", os.getenv("FRONTEND_URL")],
     allow_credentials = True,
     allow_methods= ['*'],
     allow_headers= ['*'],
