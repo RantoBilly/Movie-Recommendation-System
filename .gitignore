@@ -1,0 +1,22 @@
+# Python virtual environments
+app/venv/
+venv/
+env/
+.env
+
+# Environment-specific configs (keep the template, hide the secrets)
+config/*.env
+!config/settings.py
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Data files (Usually too large for GitHub)
+# data/raw/*.csv
+# data/processed/*.csv
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
