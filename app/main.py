@@ -4,6 +4,8 @@ from app.routers import recommendation_router
 import os
 from dotenv import load_dotenv
 
+load_dotenv()
+
 app = FastAPI()
 
 # setting up CORS Middleware : access from localhost:8001 authorized
