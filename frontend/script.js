@@ -9,7 +9,7 @@ document.getElementById('movie-form').addEventListener('submit', async (event) =
     recommendationsDiv.innerHTML = ''; // clearing the previous results
 
     try {
-        const response = await fetch ('http://localhost:8000/recommend/', {
+        const response = await fetch ('/recommend/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -1,10 +1,12 @@
-# Techlab-python-2024
-Project Title : Movie Recommandation System
+---
+title: Movie Recommendation System
+emoji: 🎬
+colorFrom: blue
+colorTo: purple
+sdk: docker
+app_port: 7860
+pinned: false
+---
 
-Team members :
-- ANDRIANARIVELO Ranto Billy
-- Harinantenaina Safidy
-- NASOLOMAMPIONONA Jedidia Faniah
-- Andrianasy Nisafidy
-
-Mentor : Fetra Ramanantsoa | MSX
+# Movie Recommendation System
+Content-based movie recommendation powered by FastAPI & scikit-learn.
