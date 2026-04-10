@@ -10,8 +10,9 @@ router = APIRouter()
 # dynamic path
 current_dir = os.path.dirname(os.path.abspath(__file__))
 data_path = os.path.join(current_dir, '..', 'data', 'processed', 'preprocessed_data.csv')
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-engine = RecommendationEngine(data_path='data/processed/preprocessed_data.csv')
+engine = RecommendationEngine(data_path=os.path.join(BASE_DIR, 'data', 'processed', 'preprocessed_data.csv'))
 tmdb_client = TMDBClient(api_key=TMDB_API_KEY)
 
 
